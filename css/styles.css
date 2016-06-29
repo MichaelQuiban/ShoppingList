@@ -50,13 +50,13 @@ body {
     background-color:#FFF;
 
 }
-.list li{
-	list-style: none;
-}
-
 .list{
-
+	position:relative;
+	right:-13em;
+	top:-2em;
+	text-align:center;
 }
+
 
 h2 {
 	padding:0;
