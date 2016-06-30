@@ -1,9 +1,9 @@
-function addListItem(){
-	var text = $("#option-text").val();
-	alert(text);
+function addShoppingItem() {
+	var text = $('input[name=option-text').val();
+	$('#todolist').append('<li>'+text+' <button>X</button></li>');
 
 }
 
-$(function(){
- $("#add").on('click', addListItem);
+$(function() {
+ $("#submit-btn").on('click', addShoppingItem);
 });
