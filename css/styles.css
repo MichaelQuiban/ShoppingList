@@ -9,9 +9,6 @@ body {
 
 }
 
-.enter-item{
-	display:inline-block;
-}
 .enter-price{
 	padding-top:1px;
 }
@@ -22,9 +19,10 @@ body {
 	border:solid 1px;
 	position:relative;
 	top:-4em;
+	right:-2.2em;
 }
 
-#option-text{
+#item-text,#price-text,#location-text,#quantity-text{
 	font-size:14px;
 	padding:8px;
 	width:21rem;
@@ -42,6 +40,7 @@ body {
 .main-container{
 	text-align:center;
 	width:600px;
+	height:33rem;
 	top:200px;
 	position:relative;
 	margin:auto;
@@ -55,8 +54,20 @@ body {
 	right:-13em;
 	top:-2em;
 	text-align:center;
+	border:1px;
 }
+.list li{
+	list-style:none;
+}
+
 
 h2 {
 	padding:0;
+}
+
+.result-header{
+position:relative;
+right:11em;
+font-family: 'Lemonada', cursive;
+
 }
