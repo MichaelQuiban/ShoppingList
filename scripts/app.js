@@ -1,11 +1,13 @@
 function addShoppingItem() {
-	var item = $("#option-text1").val();
-	var price = $("#option-text2").val();
-	var quantity = $("#option-text3").val();
-	var location = $("#option-text4").val();
-	$("#todolist").append('<li>'+item+','+price+','+quantity+','+location+' <button>X</button></li>');
+    var item = $("#item-text").val();
+    var price = $("#price-text").val();
+    var quantity = $("#quantity-text").val();
+    var location = $("#location-text").val();
+    $("#todolist").append('<li>' + item + ',' + price + ',' + quantity +
+        ',' + location + ' <button>X</button></li>');
+    $("#item-text").val("");
+    $("#price-text").val("");
+    $("#quantity-text").val("");
+    $("#location-text").val("");
 }
-
-$(function() {
- $("#submit-btn").on('click', addShoppingItem);
-});
+$("#submit-btn").on('click', addShoppingItem)

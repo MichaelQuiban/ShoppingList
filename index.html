@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shopping List Application</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type ="text/css" href="css/styles.css">
-	<link href='https://fonts.googleapis.com/css?family=Lemonada:400,300' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script type = "text/javascript" src = "scripts/app.js"></script>
-
+    <title>Shopping List Application</title>
+    <meta charset="UTF-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lemonada:400,300' rel=
+    'stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type=
+    "text/javascript">
+    </script>
 </head>
 <body>
-<div class = "main-container">
-	<div class = "shopping-header">
-		<h1>My Shopping List</h1>
-	</div>
-			<div class ="enter-item">
-				<form action="#" method="#" id="place-stuff"><br>
-					<span class id="choice-styles"></span><input type="text" id="item-text" name="option-text1" placeholder="Item" size="15" maxlength="18" required><br>
-					<span class id="choice-styles"></span><input type="text" id="price-text" name="option-text2" placeholder="Price" size="15" maxlength="18"><br>			
-				</div>
-					<span class id="choice-styles"></span><input type="text" id="quantity-text" name="option-text3" placeholder="Quantity" size="15" maxlength="15"><br>
-					<span class id="choice-styles"></span><input type="text" id="location-text" name="option-text4" placeholder="Location" size="15" maxlength="18"><br>
-					<br><input type="button" value="Submit" id="submit-btn">
-									<span class ="result-header">Results</span>
-				</form>
-
-			</div>
-        
-		<div class="list">
-
-			<ul id ="todolist">	
-			</ul>
-		</div>
-	</div>
-
+    <div class="main-container">
+        <div class="shopping-header">
+            <h1>My Shopping List</h1>
+        </div>
+        <div class="enter-item">
+            <form action="#" id="place-stuff" method="#" name="place-stuff">
+                <br>
+                <span class="" id="choice-styles"></span><input id="item-text"
+                maxlength="18" name="option-text1" placeholder="Item" required=
+                "" size="15" type="text"><br>
+                <span class="" id="choice-styles"></span><input id="price-text"
+                maxlength="18" name="option-text2" placeholder="Price" size=
+                "15" type="text"><br>
+                <span class="" id="choice-styles"></span><input id=
+                "quantity-text" maxlength="15" name="option-text3" placeholder=
+                "Quantity" size="15" type="text"><br>
+                <span class="" id="choice-styles"></span><input id=
+                "location-text" maxlength="18" name="option-text4" placeholder=
+                "Location" size="15" type="text"><br>
+                <br>
+                <input id="submit-btn" type="button" value="Submit">
+                <span class="result-header">Results</span>
+            </form>
+        </div>
+        <div class="list">
+            <ul id="todolist"></ul>
+        </div>
+    </div>
+    <script src="scripts/app.js" type="text/javascript">
+    </script>
 </body>
 </html>
