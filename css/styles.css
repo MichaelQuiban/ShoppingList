@@ -55,6 +55,7 @@ body {
     text-align: center;
     border: 1px;
     font-family: 'Pavanam', sans-serif;
+    font-weight:bold;
 }
 
 .list li {
@@ -69,4 +70,8 @@ h2 {
     position: relative;
     right: 11em;
     font-family: 'Lemonada',cursive;
+}
+.delete{
+    background:none;
+    border:none;
 }
